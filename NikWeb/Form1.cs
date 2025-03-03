@@ -81,18 +81,21 @@ namespace NikWeb
             settingsform.Show();
         }
 
-        private void searchbutton_KeyDown(object sender, KeyEventArgs e)
+        private void inputBox_KeyDown(object sender, KeyEventArgs e)
         {
-            ChromiumWebBrowser chromiumWebBrowser = tabControl.SelectedTab.Controls[0] as ChromiumWebBrowser;
-            if (inputBox.Text.Contains("."))
-                chromiumWebBrowser.Load(inputBox.Text);
-            else
+            if (e.KeyCode == Keys.Enter)
             {
-                string file = appdata + "/NikWeb/settings.txt";
-                StreamReader streamReader = new StreamReader(file);
-                string searchsystem = streamReader.ReadLine();
-                streamReader.Close();
-                chromiumWebBrowser.Load(searchsystem + inputBox.Text);
+                ChromiumWebBrowser chromiumWebBrowser = tabControl.SelectedTab.Controls[0] as ChromiumWebBrowser;
+                if (inputBox.Text.Contains("."))
+                    chromiumWebBrowser.Load(inputBox.Text);
+                else
+                {
+                    string file = appdata + "/NikWeb/settings.txt";
+                    StreamReader streamReader = new StreamReader(file);
+                    string searchsystem = streamReader.ReadLine();
+                    streamReader.Close();
+                    chromiumWebBrowser.Load(searchsystem + inputBox.Text);
+                }
             }
         }
     }

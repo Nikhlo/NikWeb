@@ -69,6 +69,7 @@
             this.inputBox.Name = "inputBox";
             this.inputBox.Size = new System.Drawing.Size(950, 20);
             this.inputBox.TabIndex = 2;
+            this.inputBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.inputBox_KeyDown);
             // 
             // searchbutton
             // 
@@ -80,7 +81,6 @@
             this.searchbutton.Text = "поиск";
             this.searchbutton.UseVisualStyleBackColor = true;
             this.searchbutton.Click += new System.EventHandler(this.searchbutton_Click);
-            this.searchbutton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchbutton_KeyDown);
             // 
             // tabControl
             // 

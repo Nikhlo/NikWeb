@@ -38,8 +38,13 @@ namespace NikWeb
         {
             file_create();
             string sys = Class1.searchsys();
-            if (sys == "https://www.google.com/search?q=" || sys == "https://www.bing.com/search?q=")
+            if (sys == "https://www.google.com/search?q=")
                 chromiumWebBrowser.Load(sys);
+            if (sys == "https://www.bing.com/search?q=") 
+            {
+                this.tabPage1.Text = "bing";
+                chromiumWebBrowser.Load(sys);
+            }
             else
             {
                 this.tabPage1.Text = "yandex";
@@ -61,7 +66,7 @@ namespace NikWeb
         private void closetabbutton_Click(object sender, EventArgs e)
         {
             if (tabControl.TabCount == 1)
-                return;
+                this.Close();
             var index = tabControl.SelectedIndex;
             var tab = tabControl.TabPages[index];
             tabControl.Controls.Remove(tab);
@@ -73,12 +78,12 @@ namespace NikWeb
             ChromiumWebBrowser chromiumWebBrowser = tabControl.SelectedTab.Controls[0] as ChromiumWebBrowser;
             if (inputBox.Text.Contains("."))
                 chromiumWebBrowser.Load(inputBox.Text);
-            if (inputBox.Text.Contains(". "))
+            else
             {
                 string search = Class1.searchsys();
                 chromiumWebBrowser.Load(search + inputBox.Text);
             }
-            else
+            if (inputBox.Text.Contains(". "))
             {
                 string search = Class1.searchsys();
                 chromiumWebBrowser.Load(search + inputBox.Text);

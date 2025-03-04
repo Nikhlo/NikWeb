@@ -18,11 +18,11 @@ namespace NikWeb
             InitializeComponent();
         }
 
-        string appdata = Environment.GetEnvironmentVariable("appdata");
+        static string appdata = Environment.GetEnvironmentVariable("appdata");
+        private string pass = appdata + "/NikWeb/settings.txt";
 
         private void google_CheckedChanged(object sender, EventArgs e)
         {
-            string pass = appdata + "/NikWeb/settings.txt";
             if (File.Exists(pass))
             {
                 File.Delete(pass);
@@ -38,7 +38,6 @@ namespace NikWeb
 
         private void yandex_CheckedChanged(object sender, EventArgs e)
         {
-            string pass = appdata + "/NikWeb/settings.txt";
             if (File.Exists(pass))
             {
                 File.Delete(pass);
@@ -54,7 +53,6 @@ namespace NikWeb
 
         private void bing_CheckedChanged(object sender, EventArgs e)
         {
-            string pass = appdata + "/NikWeb/settings.txt";
             if (File.Exists(pass))
             {
                 File.Delete(pass);

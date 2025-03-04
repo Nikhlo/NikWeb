@@ -1,4 +1,5 @@
 ﻿using CefSharp.WinForms;
+using NikWeblib;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,7 +37,14 @@ namespace NikWeb
         private void Form1_Load(object sender, EventArgs e)
         {
             file_create();
-            chromiumWebBrowser.Load("https://www.google.com");
+            string sys = Class1.searchsys();
+            if (sys == "https://www.google.com/search?q=" || sys == "https://www.bing.com/search?q=")
+                chromiumWebBrowser.Load(sys);
+            else
+            {
+                this.tabPage1.Text = "yandex";
+                chromiumWebBrowser.Load("https://ya.ru/");
+            }
         }
 
         private void newtabbutton_Click(object sender, EventArgs e)
@@ -65,13 +73,15 @@ namespace NikWeb
             ChromiumWebBrowser chromiumWebBrowser = tabControl.SelectedTab.Controls[0] as ChromiumWebBrowser;
             if (inputBox.Text.Contains("."))
                 chromiumWebBrowser.Load(inputBox.Text);
+            if (inputBox.Text.Contains(". "))
+            {
+                string search = Class1.searchsys();
+                chromiumWebBrowser.Load(search + inputBox.Text);
+            }
             else
             {
-                string file = appdata + "/NikWeb/settings.txt";
-                StreamReader streamReader = new StreamReader(file);
-                string searchsystem = streamReader.ReadLine();
-                streamReader.Close();
-                chromiumWebBrowser.Load(searchsystem + inputBox.Text);
+                string search = Class1.searchsys();
+                chromiumWebBrowser.Load(search + inputBox.Text);
             }
         }
 
@@ -90,11 +100,8 @@ namespace NikWeb
                     chromiumWebBrowser.Load(inputBox.Text);
                 else
                 {
-                    string file = appdata + "/NikWeb/settings.txt";
-                    StreamReader streamReader = new StreamReader(file);
-                    string searchsystem = streamReader.ReadLine();
-                    streamReader.Close();
-                    chromiumWebBrowser.Load(searchsystem + inputBox.Text);
+                    string search = Class1.searchsys();
+                    chromiumWebBrowser.Load(search + inputBox.Text);
                 }
             }
         }

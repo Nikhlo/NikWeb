@@ -169,6 +169,12 @@
   <ItemGroup>
     <Content Include="icon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NikWeblib\NikWeblib.csproj">
+      <Project>{0128e567-6b32-4b4f-9c19-30a146381e18}</Project>
+      <Name>NikWeblib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

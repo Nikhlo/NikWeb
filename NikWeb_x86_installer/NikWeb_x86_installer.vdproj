@@ -129,6 +129,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_4412F186C0BC416487FE623D7D957D70"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_44C1CF9D8D154372A910E5090929F31F"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -159,6 +165,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_51DC8403B5B80677BC77A6991FA4D8D2"
+        "OwnerKey" = "8:_8B164EA53BE748569275358E0F14DEE1"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_53D9631A0260487C8A8887E9EFCA8A44"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -172,12 +184,36 @@
         "Entry"
         {
         "MsmKey" = "8:_554A41DC0EF754D1F5F0517687E9AD00"
-        "OwnerKey" = "8:_B663D23FEEBF422D966177D52124CC63"
+        "OwnerKey" = "8:_8B164EA53BE748569275358E0F14DEE1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_554A41DC0EF754D1F5F0517687E9AD00"
+        "OwnerKey" = "8:_604D3A22FEFA1CB67F4B03340B41AA5D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5621C3FA87B8A07621923EF16BFAA853"
+        "OwnerKey" = "8:_8C2F755CE5094B51B0BEA672FEEDD5B1"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5621C3FA87B8A07621923EF16BFAA853"
+        "OwnerKey" = "8:_8B1AB4C3505FA1B199567E7475DE7D81"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5621C3FA87B8A07621923EF16BFAA853"
+        "OwnerKey" = "8:_8B164EA53BE748569275358E0F14DEE1"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5621C3FA87B8A07621923EF16BFAA853"
         "OwnerKey" = "8:_604D3A22FEFA1CB67F4B03340B41AA5D"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -190,12 +226,6 @@
         "Entry"
         {
         "MsmKey" = "8:_5621C3FA87B8A07621923EF16BFAA853"
-        "OwnerKey" = "8:_8C2F755CE5094B51B0BEA672FEEDD5B1"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_5621C3FA87B8A07621923EF16BFAA853"
         "OwnerKey" = "8:_1B65E9169739411FB00E09323EED8D62"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -203,24 +233,6 @@
         {
         "MsmKey" = "8:_5621C3FA87B8A07621923EF16BFAA853"
         "OwnerKey" = "8:_2674E24EC14B5CDFA844C09740E20F52"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_5621C3FA87B8A07621923EF16BFAA853"
-        "OwnerKey" = "8:_8B1AB4C3505FA1B199567E7475DE7D81"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_5621C3FA87B8A07621923EF16BFAA853"
-        "OwnerKey" = "8:_B663D23FEEBF422D966177D52124CC63"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_5621C3FA87B8A07621923EF16BFAA853"
-        "OwnerKey" = "8:_604D3A22FEFA1CB67F4B03340B41AA5D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -238,7 +250,7 @@
         "Entry"
         {
         "MsmKey" = "8:_604D3A22FEFA1CB67F4B03340B41AA5D"
-        "OwnerKey" = "8:_B663D23FEEBF422D966177D52124CC63"
+        "OwnerKey" = "8:_8B164EA53BE748569275358E0F14DEE1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -280,7 +292,7 @@
         "Entry"
         {
         "MsmKey" = "8:_801EE2D6438B9ACF1419979B9A60D527"
-        "OwnerKey" = "8:_B663D23FEEBF422D966177D52124CC63"
+        "OwnerKey" = "8:_8B164EA53BE748569275358E0F14DEE1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -309,8 +321,14 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_8B164EA53BE748569275358E0F14DEE1"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_8B1AB4C3505FA1B199567E7475DE7D81"
-        "OwnerKey" = "8:_B663D23FEEBF422D966177D52124CC63"
+        "OwnerKey" = "8:_8B164EA53BE748569275358E0F14DEE1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -430,12 +448,6 @@
         "Entry"
         {
         "MsmKey" = "8:_B1D316A229FD40D1BEE56A7C0AA8A087"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_B663D23FEEBF422D966177D52124CC63"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -604,31 +616,19 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_801EE2D6438B9ACF1419979B9A60D527"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_8C2F755CE5094B51B0BEA672FEEDD5B1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_1B65E9169739411FB00E09323EED8D62"
+        "OwnerKey" = "8:_4412F186C0BC416487FE623D7D957D70"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2674E24EC14B5CDFA844C09740E20F52"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_B663D23FEEBF422D966177D52124CC63"
+        "OwnerKey" = "8:_8B164EA53BE748569275358E0F14DEE1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -647,6 +647,30 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_554A41DC0EF754D1F5F0517687E9AD00"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_51DC8403B5B80677BC77A6991FA4D8D2"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_801EE2D6438B9ACF1419979B9A60D527"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_1B65E9169739411FB00E09323EED8D62"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_2674E24EC14B5CDFA844C09740E20F52"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -673,6 +697,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -689,6 +729,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -1120,6 +1168,37 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4412F186C0BC416487FE623D7D957D70"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:NikWeblib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_4412F186C0BC416487FE623D7D957D70"
+                    {
+                    "Name" = "8:NikWeblib.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\NikWeb\\bin\\x86\\Release\\NikWeblib.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_CB4992B1D80B4D2BB9088100CBFA9205"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_44C1CF9D8D154372A910E5090929F31F"
             {
             "SourcePath" = "8:..\\NikWeb\\bin\\x86\\Release\\vulkan-1.dll"
@@ -1218,6 +1297,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_51DC8403B5B80677BC77A6991FA4D8D2"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:NikWeblib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_51DC8403B5B80677BC77A6991FA4D8D2"
+                    {
+                    "Name" = "8:NikWeblib.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:NikWeblib.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_CB4992B1D80B4D2BB9088100CBFA9205"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_53D9631A0260487C8A8887E9EFCA8A44"
@@ -2675,15 +2785,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:NikWeb"
-        "ProductCode" = "8:{84024B39-5DDF-49D7-B09B-BE49CB01CD4E}"
-        "PackageCode" = "8:{0C317B39-5D60-4A86-94EA-DC129018D32E}"
+        "ProductCode" = "8:{FB110E48-F87D-4A6B-84D2-7B3B1FB9155E}"
+        "PackageCode" = "8:{CC206A67-571A-4550-A275-FB3D712EFE46}"
         "UpgradeCode" = "8:{074FAA1C-A1E7-4A5F-B053-392DA89F84BF}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.0.1"
         "Manufacturer" = "8:Nikolai Khlopov"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -2796,7 +2906,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_30C7D4C363034A179FEDE6355DBD4C88"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_5674411D52EA4C9A95EB83682915238E"
             {
             "Name" = "8:NikWeb"
             "Arguments" = "8:"
@@ -2804,13 +2914,13 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_B663D23FEEBF422D966177D52124CC63"
+            "Target" = "8:_8B164EA53BE748569275358E0F14DEE1"
             "Folder" = "8:_C8B5E15F4EF7465F908F0BE904733227"
             "WorkingFolder" = "8:_CB4992B1D80B4D2BB9088100CBFA9205"
             "Icon" = "8:_2344FAD313334CCB97B51F2678FBEE8B"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_D40711359F564CA6B68C553B77FB7F22"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_8139A76764F54C758F40132BEB88080B"
             {
             "Name" = "8:NikWeb"
             "Arguments" = "8:"
@@ -2818,7 +2928,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_B663D23FEEBF422D966177D52124CC63"
+            "Target" = "8:_8B164EA53BE748569275358E0F14DEE1"
             "Folder" = "8:_0B41AABD3C9E491CBA6CB4CAF79B6B1A"
             "WorkingFolder" = "8:_CB4992B1D80B4D2BB9088100CBFA9205"
             "Icon" = "8:_2344FAD313334CCB97B51F2678FBEE8B"
@@ -3223,9 +3333,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_B663D23FEEBF422D966177D52124CC63"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_8B164EA53BE748569275358E0F14DEE1"
             {
-            "SourcePath" = "8:..\\NikWeb\\obj\\x86\\Release\\NikWeb.exe"
+            "SourcePath" = "8:..\\NikWeb\\obj\\x86\\Debug\\NikWeb.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_CB4992B1D80B4D2BB9088100CBFA9205"

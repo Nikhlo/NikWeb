@@ -1,4 +1,5 @@
 ﻿using System;
+using FCreate;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,52 +19,27 @@ namespace NikWeb
             InitializeComponent();
         }
 
+        static string system;
+
         static string appdata = Environment.GetEnvironmentVariable("appdata");
         private string pass = appdata + "/NikWeb/settings.txt";
 
         private void google_CheckedChanged(object sender, EventArgs e)
         {
-            if (File.Exists(pass))
-            {
-                File.Delete(pass);
-                File.Create(pass).Close();
-                File.WriteAllText(pass, "https://www.google.com/search?q=");
-            }
-            else
-            {
-                File.Create(pass).Close();
-                File.WriteAllText(pass, "https://www.google.com/search?q=");
-            }
+            system = "https://www.google.com/search?q=";
+            FCreateClass.main(system);
         }
 
         private void yandex_CheckedChanged(object sender, EventArgs e)
         {
-            if (File.Exists(pass))
-            {
-                File.Delete(pass);
-                File.Create(pass).Close();
-                File.WriteAllText(pass, "https://ya.ru/search/?text=");
-            }
-            else
-            {
-                File.Create(pass).Close();
-                File.WriteAllText(pass, "https://ya.ru/search/?text=");
-            }
+            system = "https://ya.ru/search/?text=";
+            FCreateClass.main(system);
         }
 
         private void bing_CheckedChanged(object sender, EventArgs e)
         {
-            if (File.Exists(pass))
-            {
-                File.Delete(pass);
-                File.Create(pass).Close();
-                File.WriteAllText(pass, "https://www.bing.com/search?q=");
-            }
-            else
-            {
-                File.Create(pass).Close();
-                File.WriteAllText(pass, "https://www.bing.com/search?q=");
-            }
+            system = "https://www.bing.com/search?q=";
+            FCreateClass.main(system);
         }
     }
 }

@@ -170,6 +170,10 @@
     <Content Include="icon.ico" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FCreate\FCreate.csproj">
+      <Project>{68ae612a-9a5f-410b-990e-71e8f3a7312b}</Project>
+      <Name>FCreate</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NikWeblib\NikWeblib.csproj">
       <Project>{0128e567-6b32-4b4f-9c19-30a146381e18}</Project>
       <Name>NikWeblib</Name>

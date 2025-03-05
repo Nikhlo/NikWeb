@@ -1,4 +1,5 @@
 ﻿using CefSharp.WinForms;
+using FCreate;
 using NikWeblib;
 using System;
 using System.Collections.Generic;
@@ -37,15 +38,18 @@ namespace NikWeb
         private void Form1_Load(object sender, EventArgs e)
         {
             file_create();
-            string sys = Class1.searchsys();
+            string sys = MainClass.searchsys();
             if (sys == "https://www.google.com/search?q=")
+            {
+                this.tabPage1.Text = "google";
                 chromiumWebBrowser.Load(sys);
+            }
             if (sys == "https://www.bing.com/search?q=") 
             {
                 this.tabPage1.Text = "bing";
                 chromiumWebBrowser.Load(sys);
             }
-            else
+            if (sys == "https://ya.ru/search/?text=")
             {
                 this.tabPage1.Text = "yandex";
                 chromiumWebBrowser.Load("https://ya.ru/");
@@ -80,12 +84,12 @@ namespace NikWeb
                 chromiumWebBrowser.Load(inputBox.Text);
             else
             {
-                string search = Class1.searchsys();
+                string search = MainClass.searchsys();
                 chromiumWebBrowser.Load(search + inputBox.Text);
             }
             if (inputBox.Text.Contains(". "))
             {
-                string search = Class1.searchsys();
+                string search = MainClass.searchsys();
                 chromiumWebBrowser.Load(search + inputBox.Text);
             }
         }
@@ -105,7 +109,7 @@ namespace NikWeb
                     chromiumWebBrowser.Load(inputBox.Text);
                 else
                 {
-                    string search = Class1.searchsys();
+                    string search = MainClass.searchsys();
                     chromiumWebBrowser.Load(search + inputBox.Text);
                 }
             }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NikWeblib
 {
-    public class Class1
+    public class MainClass
     {
         static string appdata = Environment.GetEnvironmentVariable("appdata");
         public static string file = appdata + "/NikWeb/settings.txt";

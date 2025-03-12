@@ -37,8 +37,12 @@ namespace NikWeb
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //private void file_create()
             file_create();
+
+            //NikWeblib.MainClass.searchsys()
             string sys = MainClass.searchsys();
+            // change tabpage1.Text, load start page
             if (sys == "https://www.google.com/search?q=")
             {
                 this.tabPage1.Text = "google";
@@ -81,21 +85,62 @@ namespace NikWeb
         {
             ChromiumWebBrowser chromiumWebBrowser = tabControl.SelectedTab.Controls[0] as ChromiumWebBrowser;
             if (inputBox.Text.Contains("."))
-                chromiumWebBrowser.Load(inputBox.Text);
-            else
             {
                 string search = MainClass.searchsys();
+                if (search == "https://www.google.com/search?q=")
+                {
+                    this.tabPage1.Text = "google";
+                }
+                if (search == "https://www.bing.com/search?q=")
+                {
+                    this.tabPage1.Text = "bing";
+                }
+                if (search == "https://ya.ru/search/?text=")
+                {
+                    this.tabPage1.Text = "yandex";
+                }
+                chromiumWebBrowser.Load(inputBox.Text);
+            }
+            else
+            {
+                // change tabpage 1 text
+                string search = MainClass.searchsys();
+                if (search == "https://www.google.com/search?q=")
+                {
+                    this.tabPage1.Text = "google";
+                }
+                if (search == "https://www.bing.com/search?q=")
+                {
+                    this.tabPage1.Text = "bing";
+                }
+                if (search == "https://ya.ru/search/?text=")
+                {
+                    this.tabPage1.Text = "yandex";
+                }
                 chromiumWebBrowser.Load(search + inputBox.Text);
             }
             if (inputBox.Text.Contains(". "))
             {
                 string search = MainClass.searchsys();
+                if (search == "https://www.google.com/search?q=")
+                {
+                    this.tabPage1.Text = "google";
+                }
+                if (search == "https://www.bing.com/search?q=")
+                {
+                    this.tabPage1.Text = "bing";
+                }
+                if (search == "https://ya.ru/search/?text=")
+                {
+                    this.tabPage1.Text = "yandex";
+                }
                 chromiumWebBrowser.Load(search + inputBox.Text);
             }
         }
 
         private void settings_Click(object sender, EventArgs e)
         {
+            // run settings window
             settingsform settingsform = new settingsform();
             settingsform.Show();
         }
@@ -112,6 +157,62 @@ namespace NikWeb
                     string search = MainClass.searchsys();
                     chromiumWebBrowser.Load(search + inputBox.Text);
                 }
+            }
+        }
+
+        private void searchbutton_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                ChromiumWebBrowser chromiumWebBrowser = tabControl.SelectedTab.Controls[0] as ChromiumWebBrowser;
+                if (inputBox.Text.Contains("."))
+                    chromiumWebBrowser.Load(inputBox.Text);
+                else
+                {
+                    string search = MainClass.searchsys();
+                    chromiumWebBrowser.Load(search + inputBox.Text);
+                    if (search == "https://www.google.com/search?q=")
+                    {
+                        this.tabPage1.Text = "google";
+                    }
+                    if (search == "https://www.bing.com/search?q=")
+                    {
+                        this.tabPage1.Text = "bing";
+                    }
+                    if (search == "https://ya.ru/search/?text=")
+                    {
+                        this.tabPage1.Text = "yandex";
+                    }
+                }
+            }
+        }
+
+        private void homebtn_Click(object sender, EventArgs e)
+        {
+            var index = tabControl.SelectedIndex;
+            var tab = tabControl.TabPages[index];
+            ChromiumWebBrowser chromiumWebBrowser1 = tabControl.SelectedTab.Controls[0] as ChromiumWebBrowser;
+            string sys = MainClass.searchsys();
+            if (sys == "https://www.google.com/search?q=")
+            {
+                this.tabPage1.Text = "google";
+                tab.Text = "google";
+                chromiumWebBrowser1.Load(sys);
+                chromiumWebBrowser.Load(sys);
+            }
+            if (sys == "https://www.bing.com/search?q=")
+            {
+                this.tabPage1.Text = "bing";
+                tab.Text = "bing";
+                chromiumWebBrowser1.Load(sys);
+                chromiumWebBrowser.Load(sys);
+            }
+            if (sys == "https://ya.ru/search/?text=")
+            {
+                this.tabPage1.Text = "google";
+                tab.Text = "google";
+                chromiumWebBrowser1.Load("https://ya.ru/");
+                chromiumWebBrowser.Load("https://ya.ru/");
             }
         }
     }

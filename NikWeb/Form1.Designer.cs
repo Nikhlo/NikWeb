@@ -39,6 +39,7 @@
             this.newtabbutton = new System.Windows.Forms.Button();
             this.closetabbutton = new System.Windows.Forms.Button();
             this.settings = new System.Windows.Forms.Button();
+            this.homebtn = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -81,6 +82,7 @@
             this.searchbutton.Text = "поиск";
             this.searchbutton.UseVisualStyleBackColor = true;
             this.searchbutton.Click += new System.EventHandler(this.searchbutton_Click);
+            this.searchbutton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchbutton_KeyDown);
             // 
             // tabControl
             // 
@@ -144,11 +146,22 @@
             this.settings.UseVisualStyleBackColor = true;
             this.settings.Click += new System.EventHandler(this.settings_Click);
             // 
+            // homebtn
+            // 
+            this.homebtn.Location = new System.Drawing.Point(361, 28);
+            this.homebtn.Name = "homebtn";
+            this.homebtn.Size = new System.Drawing.Size(46, 23);
+            this.homebtn.TabIndex = 8;
+            this.homebtn.Text = "home";
+            this.homebtn.UseVisualStyleBackColor = true;
+            this.homebtn.Click += new System.EventHandler(this.homebtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1091, 639);
+            this.Controls.Add(this.homebtn);
             this.Controls.Add(this.settings);
             this.Controls.Add(this.closetabbutton);
             this.Controls.Add(this.newtabbutton);
@@ -180,6 +193,7 @@
         private System.Windows.Forms.Button closetabbutton;
         private CefSharp.WinForms.ChromiumWebBrowser chromiumWebBrowser;
         private System.Windows.Forms.Button settings;
+        private System.Windows.Forms.Button homebtn;
     }
 }
 

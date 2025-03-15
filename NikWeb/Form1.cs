@@ -37,10 +37,10 @@ namespace NikWeb
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //private void file_create()
+            // private void file_create()
             file_create();
 
-            //NikWeblib.MainClass.searchsys()
+            // NikWeblib.MainClass.searchsys()
             string sys = MainClass.searchsys();
             // change tabpage1.Text, load start page
             if (sys == "https://www.google.com/search?q=")
@@ -103,8 +103,9 @@ namespace NikWeb
             }
             else
             {
-                // change tabpage 1 text
+                // NikWeblib.mainclass.searchsys()
                 string search = MainClass.searchsys();
+                // change tabpage 1 text
                 if (search == "https://www.google.com/search?q=")
                 {
                     this.tabPage1.Text = "google";

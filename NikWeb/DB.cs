@@ -9,7 +9,7 @@ namespace NikWeb
 {
     class DB
     {
-        MySqlConnection mySqlConnection = new MySqlConnection("server=localhost;port=8889;username=root;password=root;database=nikwebsql");
+        MySqlConnection mySqlConnection = new MySqlConnection("server=127.0.0.1;port=8889;username=root;password=root;database=nikwebsql");
 
         public void openConnection()
         {

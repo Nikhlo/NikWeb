@@ -120,23 +120,6 @@ namespace NikWeb
                 }
                 chromiumWebBrowser.Load(search + inputBox.Text);
             }
-            if (inputBox.Text.Contains(". "))
-            {
-                string search = MainClass.searchsys();
-                if (search == "https://www.google.com/search?q=")
-                {
-                    this.tabPage1.Text = "google";
-                }
-                if (search == "https://www.bing.com/search?q=")
-                {
-                    this.tabPage1.Text = "bing";
-                }
-                if (search == "https://ya.ru/search/?text=")
-                {
-                    this.tabPage1.Text = "yandex";
-                }
-                chromiumWebBrowser.Load(search + inputBox.Text);
-            }
         }
 
         private void settings_Click(object sender, EventArgs e)
@@ -167,7 +150,23 @@ namespace NikWeb
             {
                 ChromiumWebBrowser chromiumWebBrowser = tabControl.SelectedTab.Controls[0] as ChromiumWebBrowser;
                 if (inputBox.Text.Contains("."))
+                {
                     chromiumWebBrowser.Load(inputBox.Text);
+                    string search = MainClass.searchsys();
+                    chromiumWebBrowser.Load(search + inputBox.Text);
+                    if (search == "https://www.google.com/search?q=")
+                    {
+                        this.tabPage1.Text = "google";
+                    }
+                    if (search == "https://www.bing.com/search?q=")
+                    {
+                        this.tabPage1.Text = "bing";
+                    }
+                    if (search == "https://ya.ru/search/?text=")
+                    {
+                        this.tabPage1.Text = "yandex";
+                    }
+                }
                 else
                 {
                     string search = MainClass.searchsys();

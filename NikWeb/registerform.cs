@@ -21,6 +21,8 @@ namespace NikWeb
 
         private void registerbtn_Click(object sender, EventArgs e)
         {
+            if(IsUserExsist())
+                return;
             DB dB = new DB();
 
             MySqlCommand mySqlCommand = new MySqlCommand("INSERT INTO users (id, login, password, name, surname, email) VALUES (NULL, @login, @password, @name, @surname, @email)", dB.getConnection());
@@ -38,6 +40,29 @@ namespace NikWeb
                 MessageBox.Show("error");
 
             dB.closeConnection();
+        }
+
+        private Boolean IsUserExsist()
+        {
+            DB dB = new DB();
+
+            DataTable dataTable = new DataTable();
+
+            MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter();
+
+            MySqlCommand mySqlCommand = new MySqlCommand("SELECT * FROM users WHERE `login` = @uL", dB.getConnection());
+            mySqlCommand.Parameters.Add("@uL", MySqlDbType.VarChar).Value = logintxt.Text;
+
+            mySqlDataAdapter.SelectCommand = mySqlCommand;
+            mySqlDataAdapter.Fill(dataTable);
+
+            if (dataTable.Rows.Count > 0)
+            {
+                MessageBox.Show("Такой логин уже существует");
+                return true;
+            }
+            else
+                return false;
         }
     }
 }
